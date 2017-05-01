@@ -18,14 +18,15 @@
     "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
-    "postcss-conditionals": "^2.1.0",
-    "postcss-for": "^2.1.1",
+    "postcss-extend": "^1.0.5",
     "postcss-hexrgba": "^0.2.1",
     "postcss-import": "^9.1.0",
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
     "postcss-pxtorem": "^4.0.1",
+    "postcss-scss": "^0.4.1",
     "postcss-simple-vars": "^3.1.0",
     "webpack": "^2.4.1"
   }

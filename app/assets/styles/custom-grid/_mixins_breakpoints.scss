@@ -1,0 +1,30 @@
+/* Widths */
+$small-width: 480px;
+$medium-width: 767px;
+$medium-plus-width: 1023px;
+$large-width: 1200px;
+
+
+@mixin atSmall {
+  @media (min-width: $small-width) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin atMediumPlus {
+  @media (min-width: $medium-plus-width) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: $large-width) {
+    @content;
+  }
+}

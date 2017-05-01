@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 postcss = require('gulp-postcss'),
+sass = require('gulp-sass'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
@@ -7,8 +8,7 @@ cssImport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 hexrgba = require('postcss-hexrgba'),
 pxtorem = require('postcss-pxtorem'),
-cssFor = require('postcss-for'),
-cssConditionals = require('postcss-conditionals');
+extend = require('postcss-extend');
 
 
 gulp.task('styles', function() {
@@ -19,12 +19,11 @@ gulp.task('styles', function() {
     nested,
     hexrgba,
     pxtorem,
-    cssFor,
-    cssConditionals,
     autoprefixer
   ];
 
-  return gulp.src('./app/assets/styles/styles.css')
+  return gulp.src(['./app/assets/styles/styles.css', './app/assets/modules/**/*.scss'])
+    .pipe(sass())
     .pipe(postcss(plugins))
     .on('error', function(errorInfo) {
       console.log(errorInfo.toString());

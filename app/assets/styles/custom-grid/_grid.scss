@@ -1,0 +1,20 @@
+$grid-gutter: 16px;
+
+.grid {
+	margin-right: ($grid-gutter * -1);
+	margin-left: ($grid-gutter * -1);
+}
+
+@include generate_grid(small, $grid-gutter);
+
+@include atMedium {
+	@include generate_grid(medium, $grid-gutter);
+}
+
+@include atMediumPlus {
+	@include generate_grid(mediumplus, $grid-gutter);
+}
+
+@include atLarge {
+	@include generate_grid(large, $grid-gutter);
+}

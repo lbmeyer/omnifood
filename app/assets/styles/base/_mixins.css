@@ -1,0 +1,6 @@
+/** shared by h1 and h2 **/
+@define-mixin header-font {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
