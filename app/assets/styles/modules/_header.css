@@ -49,6 +49,6 @@
     color: #FFF;
     font-size: 40px;
     word-spacing: 4px;
-    @mixin header-font; 
+    @mixin header-font;
   }
 }

@@ -4,3 +4,9 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+@define-mixin long-copy-template {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}

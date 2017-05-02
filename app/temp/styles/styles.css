@@ -1237,6 +1237,7 @@ ul {
   line-height: 145%;
   width: 70%;
   margin-left: 15%;
+  margin-bottom: 30px;
 }
 
 .section-features__copy {
@@ -1261,6 +1262,43 @@ ul {
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
+}
+
+.section-meals {
+  padding: 0;
+}
+
+.section-meals__showcase ul {
+  list-style: none;
+  width: 100%;
+}
+
+.section-meals__showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.showcase-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.showcase-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  transition: all 0.5s;
+}
+
+.showcase-photo img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 /*@import "custom-grid/_mixins_breakpoints.scss";
