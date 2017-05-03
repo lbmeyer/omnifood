@@ -5,6 +5,10 @@
   margin-bottom: 30px;
   @mixin header-font;
 
+  &--white {
+    color: #FFF;
+  }
+
   &:after {
     display: block;
     height: 2px;

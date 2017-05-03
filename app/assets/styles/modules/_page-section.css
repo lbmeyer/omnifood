@@ -4,4 +4,9 @@
   &--bg-light-grey {
     background-color: #F4F4F4;
   }
+
+  &--food-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url('../../assets/images/back-customers.jpg');
+    background-size: cover;
+  }
 }
