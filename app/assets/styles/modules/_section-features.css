@@ -1,10 +1,5 @@
 .section-features {
 
-  &__long-copy {
-    @mixin long-copy-template;
-    margin-bottom: 30px;
-  }
-
   &__copy {
     font-size: 18px;
     line-height: 145%;
@@ -16,8 +11,4 @@
     margin-bottom: 15px;
   }
 
-}
-
-.box {
-  padding: 1%;
 }

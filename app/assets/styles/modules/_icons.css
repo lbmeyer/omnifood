@@ -1,6 +1,18 @@
-.icon-big {
-  font-size: 80px;
-  display: block;
-  color: $mainOrange;
-  margin-bottom: 10px;
+.icon {
+  &--big {
+    font-size: 80px;
+    display: block;
+    color: $mainOrange;
+    margin-bottom: 10px;
+  }
+
+  &--small {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+    color: $mainOrange;
+    width: 30px;
+    position: relative;
+    top: 1px;
+  }
 }

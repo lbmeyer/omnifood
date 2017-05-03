@@ -1,0 +1,21 @@
+.work-step {
+  margin-bottom: 50px;
+
+  &:last-of-type {
+    margin-bottom: 80px;
+  }
+
+  & > div {
+    color: $mainOrange;
+    border: 2px solid $mainOrange;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 30px;
+    margin-right: 25px;
+  }
+}

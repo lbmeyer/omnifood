@@ -1,0 +1,5 @@
+.app-screen {
+  & img {
+    width: 40%;
+  }
+}

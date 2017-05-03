@@ -31,4 +31,14 @@
       color: #FFF;
     }
   }
+
+  &--app {
+    border: none;
+
+    & img {
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+    }
+  }
 }

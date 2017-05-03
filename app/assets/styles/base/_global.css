@@ -18,6 +18,20 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: $mainOrange;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $mainOrange;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: none;
+  }
+}
+
 ul {
   list-style: none;
 }
