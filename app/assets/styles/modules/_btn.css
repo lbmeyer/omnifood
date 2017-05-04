@@ -11,7 +11,7 @@
   }
 
 
-  &--full {
+  &--full, &--submit {
     background-color: $mainOrange;
     border: 1px solid $mainOrange;
     color: #FFF;
@@ -19,6 +19,7 @@
 
     &:hover {
       border: 1px solid $altOrange;
+      color: #FFF;
     }
   }
 

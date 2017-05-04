@@ -1,0 +1,57 @@
+.meal-plans {
+  background-color: #FFF;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+
+  & > div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+
+  }
+}
+
+.meal-plans-pricing {
+  background-color: #FCFCFC;
+  min-height: 168px;
+
+  &__price {
+    color: $mainOrange;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 10px;
+
+    & span {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+  &__blurb {
+    font-size: 16px;
+  }
+}
+
+.meal-plans-info {
+
+  &__item {
+    padding: 6px 0;
+
+    &:before {
+      font-family: "Ionicons";
+      content: "\f3fd";
+      font-size: 24px;
+      color: $mainOrange;
+      // margin-right: 10px;
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      top: 2px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.meal-plans-signup {
+  text-align: center;
+}
