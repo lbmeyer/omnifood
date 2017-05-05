@@ -2,11 +2,15 @@
 
   &__quote {
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 145%;
     padding: 2%;
     position: relative;
     color: #FFF;
+
+    @mixin atMedium {
+      font-size: 20px;
+    }
 
     &:before {
       content: "\201C";

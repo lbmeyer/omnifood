@@ -1,0 +1,20 @@
+.steps-box:first-child {
+	margin-top: 30px;
+	text-align: center;
+	padding-right: 3%;
+
+  @media (min-width: 769px) {
+    text-align: right;
+  }
+	/*position: relative;
+	left: 18%;*/
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 30px;
+
+  @mixin atMedium {
+    margin-top: 80px;
+  }
+}

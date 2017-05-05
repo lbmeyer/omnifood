@@ -5,11 +5,23 @@
   letter-spacing: 1px;
 }
 
-/*@define-mixin long-copy-template {
-  line-height: 145%;
-  width: 70%;
-  margin-left: 15%;
-}*/
+@define-mixin atSmall {
+    @media (min-width: 480px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: 769px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
 
 @define-mixin clearfix {
     &::after {

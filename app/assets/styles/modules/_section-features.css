@@ -1,8 +1,12 @@
 .section-features {
 
   &__copy {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 145%;
+
+    @mixin atMedium {
+      font-size: 18px;
+    }
   }
 
   &__heading {

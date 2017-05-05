@@ -1,5 +1,9 @@
 .app-screen {
   & img {
-    width: 40%;
+    width: 50%;
+
+    @mixin atLarge {
+      width: 40%;
+    }
   }
 }

@@ -10,7 +10,6 @@
     background-color: $altOrange;
   }
 
-
   &--full, &--submit {
     background-color: $mainOrange;
     border: 1px solid $mainOrange;

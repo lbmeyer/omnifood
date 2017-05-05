@@ -19,6 +19,9 @@
       <div class="site-header__logo">
         <img src="/assets/images/logo-white.png" alt="Omnifood logo">
       </div>
+      <div class="site-header-mobile-nav">
+				<a class="site-header-mobile-nav__icon" href="#"><span></span></a>
+			</div>
       <nav class="site-header__main-nav">
         <ul>
           <li><a href="#">Food Delivery</a></li>
@@ -31,8 +34,10 @@
 
     <div class="hero-box">
       <h1 class="hero-box__title">Goodbye Junk Food. <br>Hello Super Healthy meals.</h1>
-      <a class="btn btn--full" href="#">I'm Hungry</a>
-      <a class="btn btn--ghost" href="#">Show me More</a>
+      <div class="hero-box__cta">
+        <a class="btn btn--full" href="#">I'm Hungry</a>
+        <a class="btn btn--ghost" href="#">Show me More</a>
+      </div>
     </div>
   </header>
 
@@ -143,8 +148,10 @@
           <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
         </div>
 
-        <a href="#" class="btn--app"><img src="assets/images/download-app.svg" alt="App Store Button"></a>
-        <a href="#" class="btn--app"><img src="assets/images/download-app-android.png" alt="Play Store Button"></a>
+        <div class="work-step-buttons">
+          <a href="#" class="btn--app"><img src="assets/images/download-app.svg" alt="App Store Button"></a>
+          <a href="#" class="btn--app"><img src="assets/images/download-app-android.png" alt="Play Store Button"></a>
+        </div>
     </div>
   </section>
 
@@ -205,7 +212,7 @@
         </div>
       </div>
       <div class="col span-1-of-4 box">
-        <div class="city-card">
+        <div class="city-card city-card--last">
           <div class="city-card__photo">
             <img src="assets/images/london.jpg" alt="Photo of London">
           </div>
@@ -386,5 +393,34 @@
       </form>
     </div>
   </section>
+
+  <footer class="site-footer page-section page-section--footer">
+    <div class="row">
+      <div class="col span-1-of-2">
+        <ul class="site-footer__links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">iOS App</a></li>
+          <li><a href="#">Android App</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <div class="site-footer__social-icons">
+          <li><a href="#"><i class="ion-social-facebook icon"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter icon"></a></i></li>
+          <li><a href="#"><i class="ion-social-googleplus icon"></a></i></li>
+          <li><a href="#"><i class="ion-social-instagram icon"></a></i></li>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="site-footer__copyright">
+        <p>Copyright &copy; 2017 by Omnifood. ALl rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 </html>

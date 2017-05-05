@@ -16,19 +16,32 @@ body {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 2%;
+
+  @mixin atLarge {
+    padding: 0
+  }
 }
 
 a {
   color: $mainOrange;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid $mainOrange;
+  /*border-bottom: 1px solid $mainOrange;*/
   transition: all 0.2s;
 
   &:hover {
     color: #555;
     border-bottom: 1px solid transparent;
     transition: none;
+  }
+}
+
+p {
+  font-size: 16px;
+
+  @mixin atMedium {
+    font-size: 20px;
   }
 }
 

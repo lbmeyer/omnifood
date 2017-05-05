@@ -1,0 +1,32 @@
+.hero-box {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 4%;
+
+  @mixin atLarge {
+    width: 1140px;
+    // padding: 0 2%;
+  }
+
+  &__title {
+    // margin: 0 0 20px 30px;
+    color: #FFF;
+    font-size: 30px;
+    word-spacing: 4px;
+    line-height: 140%;
+    @mixin header-font;
+
+    @mixin atMedium {
+      font-size: 48px;
+      line-height: 110%;
+    }
+
+  }
+
+  &__cta {
+    // margin-left: 30px;
+  }
+}

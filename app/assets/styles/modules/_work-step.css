@@ -3,6 +3,10 @@
 
   &:last-of-type {
     margin-bottom: 80px;
+
+    @mixin atMedium {
+      margin-bottom: 30px;
+    }
   }
 
   & > div {
@@ -17,5 +21,21 @@
     float: left;
     font-size: 30px;
     margin-right: 25px;
+    position: relative;
+    bottom: 8px;
+    transform: scale(0.9);
+
+    @mixin atSmall {
+      bottom: 12px;
+    }
+
+    @mixin atMedium {
+      bottom: 0;
+      transform: none;
+    }
   }
+}
+
+.work-step-buttons {
+  text-align: center;
 }
