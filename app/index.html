@@ -11,39 +11,46 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="temp/styles/styles.css">
   <link rel="stylesheet" href="temp/styles/ionicons.min.css">
+  <link rel="stylesheet" href="temp/styles/animate.css">
 </head>
 <body>
 
   <header class="site-header">
-    <div class="row">
-      <div class="site-header__logo">
-        <img src="/assets/images/logo-white.png" alt="Omnifood logo">
-      </div>
       <div class="site-header-mobile-nav">
 				<a class="site-header-mobile-nav__icon" href="#"><span></span></a>
 			</div>
-      <nav class="site-header__main-nav">
-        <ul>
-          <li><a href="#">Food Delivery</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Our Cities</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
+      <nav class="site-header-nav">
+        <div class="row">
+          <div class="site-header__logo">
+            <img src="/assets/images/logo-white.png" alt="Omnifood logo">
+          </div>
+          <div class="site-header__logo--dark">
+            <img src="/assets/images/logo.png" alt="Omnifood logo black">
+          </div>
+          <div class="site-header__main-nav">
+            <ul>
+              <li><a href="#features" id="features-link">Food Delivery</a></li>
+              <li><a href="#steps" id="steps-link">How it Works</a></li>
+              <li><a href="#cities" id="cities-link">Our Cities</a></li>
+              <li><a href="#plans" id="plans-link">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
 
-    <div class="hero-box">
-      <h1 class="hero-box__title">Goodbye Junk Food. <br>Hello Super Healthy meals.</h1>
-      <div class="hero-box__cta">
-        <a class="btn btn--full" href="#">I'm Hungry</a>
-        <a class="btn btn--ghost" href="#">Show me More</a>
-      </div>
-    </div>
   </header>
 
-  <section id="features" class="page-section">
+  <div class="hero-box">
+    <h1 class="hero-box__title">Goodbye Junk Food. <br>Hello Super Healthy meals.</h1>
+    <div class="hero-box__cta">
+      <a class="btn btn--full btn-hungry" href="#plans">I'm Hungry</a>
+      <a class="btn btn--ghost btn-show-more" href="#features">Show me More</a>
+    </div>
+  </div>
+
+  <section id="features" class="page-section" data-matching-link="#features-link">
     <div class="row">
-      <h2 class="section-title">Get Food Fast &mdash; not fast food</h2>
+      <h2 class="section-title sticky-nav-trigger">Get Food Fast &mdash; not fast food</h2>
       <p class="section-intro">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
     </div>
 
@@ -124,7 +131,7 @@
       </ul>
   </section>
 
-  <section id="steps" class="page-section page-section--bg-light-grey">
+  <section id="steps" class="page-section page-section--bg-light-grey" data-matching-link="#steps-link">
     <div class="row">
       <h2 class="section-title">How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
@@ -155,7 +162,7 @@
     </div>
   </section>
 
-  <div id="cities" class="page-section">
+  <div id="cities" class="page-section" data-matching-link="#cities-link">
     <div class="row">
       <h2 class="section-title">We're currently in these cities</h2>
     </div>
@@ -263,7 +270,7 @@
     </div>
   </section>
 
-  <section id="plans" class="page-section page-section--bg-light-grey">
+  <section id="plans" class="page-section page-section--bg-light-grey" data-matching-link="#plans-link">
     <div class="row">
       <div class="section-title">Start Eating Healthy Today</div>
     </div>
@@ -421,6 +428,8 @@
     </div>
   </footer>
 
+  <script src="/temp/scripts/app.js"></script>
 
+</script>
 </body>
 </html>

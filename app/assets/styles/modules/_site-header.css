@@ -20,12 +20,22 @@
     margin-top: 20px;
   }
 
+  &__logo--dark img {
+    visibility: hidden;
+    opacity: 0;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+  }
+
   &__main-nav {
     float: left;
     list-style: none;
     margin-top: 30px;
     display: none;
-    transition: all 0.3s ease-in-out;
 
     @mixin atMedium {
       margin-top: 60px;
@@ -70,7 +80,7 @@
   }
 }
 
-/** Mobile Nav **/
+/** Mobile Nav Button**/
 .site-header-mobile-nav {
   position: absolute;
   display: block;
@@ -124,4 +134,43 @@
       }
     }
   }
+}
+
+/** Style Sticky Navigation **/
+.site-header-nav {
+  @mixin atMedium {
+    &--sticky {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 2px #efefef;
+      z-index: 10;
+
+      & .site-header__main-nav {
+        margin-top: 18px;
+      }
+
+      & li a {
+        transition: all 0.3s ease-in;
+        color: #555;
+        padding: 17px 0;
+      }
+
+      & li a.is-current-link {
+        color: tomato;
+      }
+
+      & .site-header__logo {
+        display: none;
+      }
+
+      & .site-header__logo--dark img {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
 }

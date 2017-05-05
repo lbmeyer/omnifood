@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.2.1",
+    "jquery-smooth-scroll": "^2.2.0",
     "normalize.css": "^6.0.0",
     "waypoints": "^4.0.1"
   },
@@ -28,6 +29,6 @@
     "postcss-pxtorem": "^4.0.1",
     "postcss-scss": "^0.4.1",
     "postcss-simple-vars": "^3.1.0",
-    "webpack": "^2.4.1"
+    "webpack": "^2.5.0"
   }
 }

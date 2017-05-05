@@ -21,7 +21,7 @@
 
     @mixin atMedium {
       font-size: 48px;
-      line-height: 110%;
+      line-height: 110%; 
     }
 
   }

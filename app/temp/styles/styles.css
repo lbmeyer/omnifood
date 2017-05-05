@@ -428,6 +428,8 @@ template {
 
 /** Colors **/
 
+/** shared by h1 and h2 **/
+
 * {
   margin: 0;
   padding: 0;
@@ -460,7 +462,7 @@ a {
   color: #e67e22;
   text-decoration: none;
   padding-bottom: 1px;
-  /*border-bottom: 1px solid $mainOrange;*/
+  border-bottom: 1px solid #e67e22;
   transition: all 0.2s;
 }
 
@@ -493,8 +495,6 @@ button, input, optgroup, select, textarea {
 }
 
 *:focus {outline:none;}
-
-/** shared by h1 and h2 **/
 
 /*  BOX  ============================================================================= */
 
@@ -1219,12 +1219,21 @@ button, input, optgroup, select, textarea {
   margin-top: 20px;
 }
 
+.site-header__logo--dark img {
+  visibility: hidden;
+  opacity: 0;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
 .site-header__main-nav {
   float: left;
   list-style: none;
   margin-top: 30px;
   display: none;
-  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 769px) {
@@ -1277,7 +1286,7 @@ button, input, optgroup, select, textarea {
   }
 }
 
-/** Mobile Nav **/
+/** Mobile Nav Button**/
 
 .site-header-mobile-nav {
   position: absolute;
@@ -1340,6 +1349,44 @@ button, input, optgroup, select, textarea {
 .site-header-mobile-nav__icon.active span:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/** Style Sticky Navigation **/
+
+@media (min-width: 769px) {
+
+  .site-header-nav--sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 10;
+  }
+
+  .site-header-nav--sticky .site-header__main-nav {
+    margin-top: 18px;
+  }
+
+  .site-header-nav--sticky li a {
+    transition: all 0.3s ease-in;
+    color: #555;
+    padding: 17px 0;
+  }
+
+  .site-header-nav--sticky li a.is-current-link {
+    color: tomato;
+  }
+
+  .site-header-nav--sticky .site-header__logo {
+    display: none;
+  }
+
+  .site-header-nav--sticky .site-header__logo--dark img {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .btn {
