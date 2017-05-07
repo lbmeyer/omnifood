@@ -28,12 +28,6 @@ class RevealOnScroll {
         element: currentItem,
         handler: function() {
 
-            // console.log($(currentItem));
-            // console.log(currentItem);
-            // console.log(this);
-            // console.log(this.element);
-            // console.log($(this));
-
           if ($(currentItem).hasClass("app-screen")) {
             $(currentItem).addClass("animated fadeInUp");
           }
