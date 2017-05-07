@@ -7,6 +7,7 @@ class StickyHeader {
     // For sticky nav
     this.siteNav = $(".site-header-nav");
     this.headerTriggerElement = $(".sticky-nav-trigger");
+    this.mobileMenuIcon = $(".site-header-mobile-nav__icon");
     this.createHeaderWaypoint();
 
     // For smooth scrolling
@@ -27,8 +28,11 @@ class StickyHeader {
       handler: function(direction) {
         if(direction == "down") {
           that.siteNav.addClass("site-header-nav--sticky");
+          //move hamburger icon lower in sticky nav
+          that.mobileMenuIcon.addClass("site-header-mobile-nav__icon--is-in-sticky");
         } else {
           that.siteNav.removeClass("site-header-nav--sticky");
+          that.mobileMenuIcon.removeClass("site-header-mobile-nav__icon--is-in-sticky");
         }
       },
       offset: "12%"
