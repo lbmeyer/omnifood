@@ -8,6 +8,7 @@
 
   &:hover {
     background-color: $altOrange;
+    cursor: pointer;
   }
 
   &--full, &--submit {
@@ -20,6 +21,12 @@
       border: 1px solid $altOrange;
       color: #FFF;
     }
+  }
+
+  &--meal-plan {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: auto;
   }
 
   &--ghost {

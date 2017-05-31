@@ -544,8 +544,14 @@ button, input, optgroup, select, textarea {
 
 @media only screen and (max-width: 480px) {
 	.col {
-		/*margin: 1% 0 1% 0%;*/
+		margin: 1% 0 1% 0%;
         margin: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.col {
+		margin: 1% 0 1% 0%;
 	}
 }
 
@@ -1416,6 +1422,7 @@ button, input, optgroup, select, textarea {
 
 .btn:hover {
   background-color: #cf6d17;
+  cursor: pointer;
 }
 
 .btn--full, .btn--submit {
@@ -1428,6 +1435,12 @@ button, input, optgroup, select, textarea {
 .btn--full:hover, .btn--submit:hover {
   border: 1px solid #cf6d17;
   color: #FFF;
+}
+
+.btn--meal-plan {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: auto;
 }
 
 .btn--ghost {
@@ -1775,99 +1788,102 @@ button, input, optgroup, select, textarea {
 }
 
 .meal-plans {
-  background-color: #FFF;
-  border-radius: 5px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/*margin-left: 5%;*/
+/*@mixin atMedium {
+    flex-wrap: nowrap;
+  }*/
 
-@media (min-width: 1200px) {
-
-  .meal-plans {
-    width: 90%;
-    margin-left: 5%;
-  }
+.meal-plans__box {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #fff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 320px;
+          flex: 0 1 320px;
 }
 
-.meal-plans > div {
-  padding: 15px;
-  border-bottom: 1px solid #e8e8e8;
+.meal-plans__title {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.meal-plans-pricing {
-  background-color: #FCFCFC;
-  min-height: 168px;
-}
-
-.meal-plans-pricing__price {
+.meal-plans__price {
   color: #e67e22;
   font-size: 3rem;
   font-weight: 100;
-  margin-bottom: 10px;
+  padding: 20px 0 10px;
 }
 
 @media (min-width: 1200px) {
 
-  .meal-plans-pricing__price {
+  .meal-plans__price {
     font-size: 3.75rem;
   }
 }
 
-.meal-plans-pricing__price span {
+.meal-plans__price span {
   font-size: 1.125rem;
   font-weight: 300;
+  margin-left: 10px;
 }
 
-.meal-plans-pricing__blurb {
+.meal-plans__blurb {
   font-size: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0 10px;
 }
 
-.meal-plans-info__item {
-  padding: 0;
-  font-size: 1rem;
+.meal-plans__feature-list {
+  padding: 20px 0;
 }
 
-@media (min-width: 769px) {
-
-  .meal-plans-info__item {
-    font-size: 1.125rem;
-  }
+.meal-plans__feature {
+  padding: 5px 0;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 1200px) {
 
-  .meal-plans-info__item {
-    padding: 6px 0;
+  .meal-plans__feature {
+    font-size: 1.25rem;
   }
 }
 
-.meal-plans-info__item:before {
+.meal-plans__feature:before {
   font-family: "Ionicons";
   content: "\f3fd";
   font-size: 1.5rem;
   color: #e67e22;
-  // margin-right: 10px;
   display: inline-block;
-  width: 30px;
   position: relative;
   top: 2px;
-  margin-left: 10px;
+  margin: 0 20px 0 10px;
 }
 
-.meal-plans-signup {
-  text-align: center;
-}
-
-.meal-plans-signup a {
-  font-size: 1rem;
-}
-
-@media (min-width: 769px) {
-
-  .meal-plans-signup a {
-    font-size: 1.25rem;
-  }
+.meal-plans__action {
+  background-color: #e67e22;
+  border: none;
 }
 
 .contact-form {
